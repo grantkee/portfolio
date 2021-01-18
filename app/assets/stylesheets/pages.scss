@@ -89,8 +89,17 @@
     #about-background {
       background: url('https://images.unsplash.com/photo-1484068043587-e86f6124d2ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2942&q=80') no-repeat center center fixed;
       background-color: #2F2C2F;
-      // background-size: cover;
       height: 100vh;
+    }
+
+    #profile-picture {
+      background: url('https://avatars0.githubusercontent.com/u/49913008?s=460&v=4') no-repeat center center;
+      height: 450px;
+      width: 450px;
+      border: 5px solid #353235;
+      border-radius: 50%;
+      margin-left: 5%;
+      margin-top: 5%;
     }
 
     div {

@@ -8,4 +8,10 @@ class PagesController < ApplicationController
 
   def about_alt
   end
+
+  def projects
+  end
+
+  def contact
+  end
 end

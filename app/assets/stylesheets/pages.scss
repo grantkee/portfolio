@@ -114,6 +114,88 @@ $black: #000000;
 
     #about-background {
       background: url('https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-leftside.jpg?raw=true') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      min-height: 600px;
+      
+      #profile-picture {
+        background: url('https://avatars0.githubusercontent.com/u/49913008?s=460&v=4') no-repeat center center;
+        height: 450px;
+        width: 450px;
+        border: 5px solid $dark-gray;
+        border-radius: 50%;
+        margin-left: 5%;
+        margin-top: 5%;
+        min-height: 300px;
+      }
+
+      #load-content-container {
+        font-size: 33px;
+        width: 50%;
+        height: fit-content;
+        color: $white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        background-color: $text-background;
+      }
+    }
+
+    #scroll-content-container {
+      background-color: $dark-gray;
+      color: $white;
+      height: 820px;
+    }
+  }
+
+  //projects
+  &.projects {
+    height: auto;
+    overflow: auto;
+
+    #projects-background {
+      background: url('https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-leftside.jpg?raw=true') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      min-height: 600px;
+      
+      #profile-picture {
+        background: url('https://avatars0.githubusercontent.com/u/49913008?s=460&v=4') no-repeat center center;
+        height: 450px;
+        width: 450px;
+        border: 5px solid $dark-gray;
+        border-radius: 50%;
+        margin-left: 5%;
+        margin-top: 5%;
+        min-height: 300px;
+      }
+
+      #load-content-container {
+        font-size: 33px;
+        width: 50%;
+        height: fit-content;
+        color: $white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        background-color: $text-background;
+      }
+    }
+
+    #scroll-content-container {
+      background-color: $dark-gray;
+      color: $white;
+      height: 820px;
+    }
+  }
+
+  &.contact {
+    height: auto;
+    overflow: auto;
+
+    #contact-background {
+      background: url('https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-leftside.jpg?raw=true') no-repeat center center fixed;
+      background-size: cover;
       height: 100vh;
       min-height: 600px;
       

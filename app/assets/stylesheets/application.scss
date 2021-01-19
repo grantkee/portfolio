@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+$dark-blue: #3E4044;
+$med-blue: #4A6373;
+$light-blue: #93A5A8;
+$light-gray: #D5D1CE;
+// $dark-gray: #1C1919;
+$dark-gray: #353235;
+$text-background: rgba(53, 50, 53, 0.59);
+$white: #fff;
+$black: #000000;
+
+header {
+  background: url('https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-darkest.jpg?raw=true') no-repeat;
+  background-size: cover;
+  height: 50px;
+  font-family: "Quicksand", sans-serif;
+  color: $white;
+
+  a.nav {
+    color: $med-blue;
+    font-size: 30px;
+    text-decoration: none;
+
+    &:hover {
+      color: $light-blue;
+    }
+  }
+  
+  a.social-media {
+    color: $black;
+    font-size: 40px;
+    margin-right: 33px;
+    text-decoration: none;
+  
+    .fas, .fab {
+      font-family: FontAwesome;
+      font-style: normal;
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  padding-left: 33px;
+
+}

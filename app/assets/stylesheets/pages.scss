@@ -124,26 +124,33 @@ $black: #000000;
       min-height: 600px;
       
       #profile-picture {
-        background: url('https://avatars0.githubusercontent.com/u/49913008?s=460&v=4') no-repeat center center;
+        background: url("https://avatars0.githubusercontent.com/u/49913008?s=460&v=4") no-repeat 64% 22%;
         background-color: $light-blue;
-        height: 450px;
-        width: 450px;
+        height: 300px;
+        width: 300px;
         border: 5px solid $dark-gray;
         border-radius: 50%;
-        margin-left: 5%;
-        margin-top: 5%;
         min-height: 300px;
+        min-width: 300px;
       }
 
-      #load-content-container {
+      h1 {
+        font-size: 60px;
+        text-shadow: 1px 1px $dark-blue;
+      }
+      h2 {
+        font-size: 40px;
+        color: $black;
+        text-shadow: 1px 1px $dark-blue;
+      }
+      h3 {
         font-size: 33px;
-        width: 50%;
-        height: fit-content;
-        color: $white;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-        background-color: $text-background;
+        color: $light-blue;
+        text-shadow: 1px 1px $light-gray;
+      }
+      p {
+        font-size: 30px;
+        color: #000000;
       }
     }
 
@@ -165,18 +172,6 @@ $black: #000000;
       background-size: cover;
       height: 100vh;
       min-height: 600px;
-      
-      #profile-picture {
-        background: url('https://avatars0.githubusercontent.com/u/49913008?s=460&v=4') no-repeat center center;
-        background-color: $light-blue;
-        height: 450px;
-        width: 450px;
-        border: 5px solid $dark-gray;
-        border-radius: 50%;
-        margin-left: 5%;
-        margin-top: 5%;
-        min-height: 300px;
-      }
 
       #load-content-container {
         font-size: 33px;
@@ -219,20 +214,8 @@ $black: #000000;
   }
 }
 
-@media screen and (max-width: 850px) {
-  #about-background {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 768px) {
 
-    #profile-picture {
-      background: url("https://avatars0.githubusercontent.com/u/49913008?s=460&v=4") no-repeat 64% 22% !important;
-      background-color: $light-blue;
-      height: 300px !important;
-      width: 300px !important;
-      margin: 0;
-    }
-  }
 }
 
 @media screen and (max-width: 816px) and (min-width: 600px) {

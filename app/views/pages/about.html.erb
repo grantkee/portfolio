@@ -1,25 +1,29 @@
-<%
-=begin%>
- <div class="container-fluid d-flex flex-column about">
-  <div id="about-background" class="d-flex flex-wrap">
-    <div id="profile-picture"></div>
-    <div id="load-content-container">
-      Bacon ipsum dolor amet turducken bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip. Frankfurter ribeye fatback tongue pastrami porchetta beef alcatra short ribs turducken bacon leberkas cupim. Biltong tail capicola tongue porchetta, bacon ham hock picanha strip steak chislic pastrami pork belly. Bacon pork belly fatback andouille cupim bresaola pastrami.
-    </div>
-    <div id="skills">
-      Bacon ipsum dolor amet turducken bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip. Frankfurter ribeye fatback tongue pastrami porchetta beef alcatra short ribs turducken bacon leberkas cupim. Biltong tail capicola tongue porchetta, bacon ham hock picanha strip steak chislic pastrami pork belly. Bacon pork belly fatback andouille cupim bresaola pastrami.
-    </div>
-  </div>
-  <div id="scroll-content-container" class="w-100">
-    Hiiiii
-  </div>
-</div> 
-<%
-=end%>
-
-
 <div class="container-fluid d-flex flex-column about">
-  <div id="about-background">
+  <div id="welcome">
+    <h1>Grant Kee</h1>
+    <div class="row d-flex flex-sm-column flex-md-row justify-content-center align-items-center">
+      <div class="col-sm-12 col-md-4">
+        <a class="btn-default" href="#about">
+          <%= icon('fas', 'address-card') %>
+          <h2>About</h2>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <a class="btn-default" href="#projects">
+          <%= icon('fas', 'code') %>
+          <h2>Projects</h2>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <a class="btn-default" href="#skills">
+          <%= icon('fas', 'dumbbell') %>
+          <h2>skilz</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 content-break"><a id="interests"></a></div>
+  <div id="about">
     <div class="row h-100">
       <div class="col-12 col-lg-4 d-flex flex-column align-items-center pt-5">
         <div id="profile-picture" class="mb-5"></div>
@@ -42,48 +46,123 @@
       </div>
     </div>
   </div>
-  <div id="skills" class="w-100 d-flex flex-column justify-content-center flex-wrap content-break">
-    <a id="resume"></a>
-    <div>
-      <%= icon('fab', 'react')%>
-      React
+  <div id="skills" class="w-100 content-break">
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+        <%= icon('fab', 'react', style: 'color: #61DBFB;')%>
+        React
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
     </div>
-    <div>
-      <%= icon('fab', 'github')%>
-      GitHub
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+        <%= icon('fab', 'github')%> 
+        GitHub
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
     </div>
-    <div>
-      <%= icon('far', 'gem')%>
-      Rails
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+      <%= icon('far', 'gem', style: 'color: red;')%> 
+        Rails
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
     </div>
-    <div>
-      <%= icon('fab', 'digital-ocean')%>
-      DigitalOcean
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+        <%= icon('fab', 'digital-ocean', style: 'color:#006AFF;')%> 
+        DigitalOcean
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
     </div>
-    <div>
-      <%= icon('fab', 'aws')%>
-      AWS
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+      <%= image_tag('https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35@2x.png', alt: 'aws') %>
+      <%
+=begin%>
+ <%= icon('fab', 'aws')%>  
+<%
+=end%>
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
     </div>
-    <div>
-      <%= icon('fab', 'java')%>
-      Java
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+        <%
+=begin%>
+ <%= icon('fab', 'java')%>  
+<%
+=end%>
+        <%= image_tag('https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png', alt: 'java') %>
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
     </div>
-    <div>
-      <%= icon('fab', 'sass')%>
-      SCSS
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+        <%= icon('fab', 'sass', style: 'color:#BF4080;')%>
+        SCSS
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
     </div>
-    <div>
-      <%= icon('fal', 'elephant')%>
-      PostgreSQL
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+        <%= image_tag('https://www.postgresql.org/media/img/about/press/elephant.png', alt: "postgreSQL") %>
+        PostgreSQL
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
     </div>
-    <div>
-      <%= icon('fab', 'linux')%>
-      Linux
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+        <%= image_tag('https://upload.wikimedia.org/wikipedia/en/e/ee/MySQL_Logo.png', alt: "MySQL") %>
+        MySQL
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
+    </div>
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+<%
+=begin%>
+ <%= icon('fab', 'linux')%> 
+<%
+=end%>
+        <%= image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/598px-Tux.svg.png', alt: "linux") %>
+        Linux
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
+    </div>
+    <div class="row w-100">
+      <div class="col-12 col-lg-3 skill-title">
+        <%= image_tag('https://redux.js.org/img/redux.svg', alt: 'redux') %>
+        Rdux
+      </div>
+      <div class="col-12 col-lg-9 text-center text-lg-left skill-description">
+        bacon spare ribs, rump kielbasa porchetta ground round. Pork loin sirloin tri-tip pork burgdoggen. Bresaola pork loin pig tri-tip.
+      </div>
     </div>
     
   </div>
   <div id="scroll-content-container" class="w-100">
-    <a id="experience"></a>
+    <a id="projects"></a>
     Hiiiii
   </div>
   <div class="w-100 content-break"><a id="interests"></a></div>

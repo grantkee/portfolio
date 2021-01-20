@@ -50,9 +50,7 @@ $black: #000000;
       margin-bottom: 20px;   
       
       .fas {
-        font-family: FontAwesome;
         font-size: 40px;
-        font-style: normal;
       }
   
       .h2 {
@@ -154,7 +152,7 @@ $black: #000000;
       }
     }
 
-    #content-break {
+    .content-break {
       background: url('https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-darkest.jpg?raw=true') no-repeat center center fixed;
       background-size: cover;
       background-color: $dark-gray;
@@ -167,6 +165,18 @@ $black: #000000;
       background-color: $dark-gray;
       color: $white;
       min-height: 100vh;
+    }
+
+    #skills {
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        color: $white;
+        font-size: 30px;
+      }
     }
   }
 

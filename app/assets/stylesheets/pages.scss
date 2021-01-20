@@ -120,8 +120,8 @@ $black: #000000;
       background: url('https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-leftside-dark2.jpeg?raw=true') no-repeat center center fixed;
       background-color: $light-blue;
       background-size: cover;
-      height: 100vh;
-      min-height: 600px;
+      min-height: 100vh;
+      // min-height: 600px;
       
       #profile-picture {
         background: url("https://avatars0.githubusercontent.com/u/49913008?s=460&v=4") no-repeat 64% 22%;
@@ -154,10 +154,19 @@ $black: #000000;
       }
     }
 
+    #content-break {
+      background: url('https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-darkest.jpg?raw=true') no-repeat center center fixed;
+      background-size: cover;
+      background-color: $dark-gray;
+      min-height: 100vh;
+    }
+
     #scroll-content-container {
+      background: url('https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-rightside-dark.jpg?raw=true') no-repeat center center fixed;
+      background-size: cover;
       background-color: $dark-gray;
       color: $white;
-      height: 820px;
+      min-height: 100vh;
     }
   }
 

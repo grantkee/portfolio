@@ -175,7 +175,13 @@ $black: #000000;
         align-items: center;
         margin: 1rem;
         color: $white;
-        font-size: 30px;
+        font-size: 33px;
+        height: 150px;
+        width: 150px;
+        
+        .fas, .far, .fab {
+          font-size: 60px;
+        }
       }
     }
   }

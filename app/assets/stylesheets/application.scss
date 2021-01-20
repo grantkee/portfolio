@@ -50,11 +50,7 @@ header {
     font-size: 40px;
     margin-right: 33px;
     text-decoration: none;
-  
-    .fas, .fab {
-      font-family: FontAwesome;
-      font-style: normal;
-    }
+
     &:hover {
       color: $white;
     }

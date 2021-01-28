@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#welcome'
+  root 'home#index'
 
   get '/about' => 'pages#about'
   get '/about_alt' => 'pages#about_alt'

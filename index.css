@@ -241,8 +241,6 @@
 /* line 228, app/assets/stylesheets/home.scss */
 .container-fluid.about #skills .row {
   align-items: center;
-  margin-top: 33px;
-  margin-bottom: 33px;
 }
 
 /* line 232, app/assets/stylesheets/home.scss */
@@ -447,10 +445,11 @@
 /* line 115, app/assets/stylesheets/pages.scss */
 .container-fluid.about {
   height: auto;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-/* line 119, app/assets/stylesheets/pages.scss */
+/* line 120, app/assets/stylesheets/pages.scss */
 .container-fluid.about #welcome {
   background: url("https://images.unsplash.com/photo-1478515463067-d20f52aace26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1568&q=80") no-repeat center center fixed;
   background-color: #93A5A8;
@@ -459,7 +458,7 @@
   min-height: 100vh;
 }
 
-/* line 126, app/assets/stylesheets/pages.scss */
+/* line 127, app/assets/stylesheets/pages.scss */
 .container-fluid.about #welcome h1 {
   color: #353235;
   font-family: 'Yusei Magic', sans-serif;
@@ -471,7 +470,7 @@
   padding-top: 10%;
 }
 
-/* line 137, app/assets/stylesheets/pages.scss */
+/* line 138, app/assets/stylesheets/pages.scss */
 .container-fluid.about #welcome .btn-default {
   color: #fff;
   font-weight: 600;
@@ -484,31 +483,31 @@
   margin-bottom: 20px;
 }
 
-/* line 148, app/assets/stylesheets/pages.scss */
+/* line 149, app/assets/stylesheets/pages.scss */
 .container-fluid.about #welcome .btn-default .fas {
   font-size: 40px;
 }
 
-/* line 152, app/assets/stylesheets/pages.scss */
+/* line 153, app/assets/stylesheets/pages.scss */
 .container-fluid.about #welcome .btn-default .h2 {
   font-weight: 600;
   font-size: 23px;
   text-transform: uppercase;
 }
 
-/* line 158, app/assets/stylesheets/pages.scss */
+/* line 159, app/assets/stylesheets/pages.scss */
 .container-fluid.about #welcome .btn-default:hover {
   background-color: #fff;
   color: #353235;
 }
 
-/* line 165, app/assets/stylesheets/pages.scss */
+/* line 166, app/assets/stylesheets/pages.scss */
 .container-fluid.about #quote {
   font-style: italic;
   font-size: 60px;
 }
 
-/* line 170, app/assets/stylesheets/pages.scss */
+/* line 171, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about {
   background: url("https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-leftside-dark2.jpeg?raw=true") no-repeat center center fixed;
   background-color: #93A5A8;
@@ -516,7 +515,7 @@
   min-height: 100vh;
 }
 
-/* line 177, app/assets/stylesheets/pages.scss */
+/* line 178, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about #profile-picture {
   background: url("https://avatars0.githubusercontent.com/u/49913008?s=460&v=4") no-repeat 64% 22%;
   background-color: #93A5A8;
@@ -528,38 +527,65 @@
   min-width: 300px;
 }
 
-/* line 188, app/assets/stylesheets/pages.scss */
+/* line 189, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about h1 {
   font-size: 60px;
   text-shadow: 1px 1px #3E4044;
 }
 
-/* line 192, app/assets/stylesheets/pages.scss */
+/* line 193, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about h2 {
   font-size: 40px;
   color: #000000;
   text-shadow: 1px 1px #3E4044;
 }
 
-/* line 197, app/assets/stylesheets/pages.scss */
-.container-fluid.about #about h3 {
-  font-size: 33px;
+/* line 198, app/assets/stylesheets/pages.scss */
+.container-fluid.about #about a h3 {
+  font-size: 1rem;
   color: #93A5A8;
-  text-shadow: 1px 1px #D5D1CE;
+  text-shadow: none;
 }
 
-/* line 202, app/assets/stylesheets/pages.scss */
+/* line 203, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about p {
   font-size: 30px;
   color: #000000;
 }
 
-/* line 206, app/assets/stylesheets/pages.scss */
+/* line 207, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about p a {
   color: #4A6373;
 }
 
 /* line 212, app/assets/stylesheets/pages.scss */
+.container-fluid.about #about .accordion {
+  background-color: transparent;
+  color: #3E4044;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  width: 100%;
+}
+
+/* line 221, app/assets/stylesheets/pages.scss */
+.container-fluid.about #about .accordion.active, .container-fluid.about #about .accordion:hover {
+  background-color: #353235;
+  color: #93A5A8;
+}
+
+/* line 227, app/assets/stylesheets/pages.scss */
+.container-fluid.about #about .panel {
+  color: #fff;
+  background-color: rgba(53, 50, 53, 0.59);
+  text-align: left;
+  padding: 0px 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+/* line 238, app/assets/stylesheets/pages.scss */
 .container-fluid.about .content-break {
   background: url("https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-darkest.jpg?raw=true") no-repeat center center fixed;
   background-size: cover;
@@ -567,7 +593,7 @@
   min-height: 100vh;
 }
 
-/* line 219, app/assets/stylesheets/pages.scss */
+/* line 245, app/assets/stylesheets/pages.scss */
 .container-fluid.about #scroll-content-container {
   background: url("https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-rightside-dark.jpg?raw=true") no-repeat center center fixed;
   background-size: cover;
@@ -576,12 +602,17 @@
   min-height: 100vh;
 }
 
-/* line 228, app/assets/stylesheets/pages.scss */
+/* line 254, app/assets/stylesheets/pages.scss */
+.container-fluid.about #skills a {
+  color: #fff;
+}
+
+/* line 257, app/assets/stylesheets/pages.scss */
 .container-fluid.about #skills .row {
   align-items: center;
 }
 
-/* line 232, app/assets/stylesheets/pages.scss */
+/* line 261, app/assets/stylesheets/pages.scss */
 .container-fluid.about #skills .skill-title {
   display: flex;
   flex-direction: column;
@@ -590,32 +621,99 @@
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   color: #fff;
-  font-size: 33px;
+  font-size: 1.5rem;
 }
 
-/* line 243, app/assets/stylesheets/pages.scss */
+/* line 272, app/assets/stylesheets/pages.scss */
 .container-fluid.about #skills .skill-title .fas, .container-fluid.about #skills .skill-title .far, .container-fluid.about #skills .skill-title .fab {
   font-size: 60px;
 }
 
-/* line 247, app/assets/stylesheets/pages.scss */
+/* line 276, app/assets/stylesheets/pages.scss */
 .container-fluid.about #skills .skill-title img {
   width: 60px;
   height: auto;
 }
 
-/* line 253, app/assets/stylesheets/pages.scss */
+/* line 282, app/assets/stylesheets/pages.scss */
 .container-fluid.about #skills .skill-description {
-  font-size: 33px;
+  font-size: 1.25rem;
 }
 
-/* line 260, app/assets/stylesheets/pages.scss */
+/* line 287, app/assets/stylesheets/pages.scss */
+.container-fluid.about #projects {
+  background: url("https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-rightside-dark.jpg?raw=true") no-repeat center center fixed;
+  min-height: 100vh;
+}
+
+/* line 290, app/assets/stylesheets/pages.scss */
+.container-fluid.about #projects a {
+  color: #fff;
+}
+
+/* line 292, app/assets/stylesheets/pages.scss */
+.container-fluid.about #projects a img {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #fff;
+}
+
+/* line 298, app/assets/stylesheets/pages.scss */
+.container-fluid.about #projects h2 {
+  color: #4A6373;
+}
+
+/* line 301, app/assets/stylesheets/pages.scss */
+.container-fluid.about #projects h3 {
+  color: #93A5A8;
+}
+
+/* line 304, app/assets/stylesheets/pages.scss */
+.container-fluid.about #projects p {
+  max-width: 50%;
+  color: #3E4044;
+}
+
+/* line 310, app/assets/stylesheets/pages.scss */
+.container-fluid.about #current-work {
+  min-height: 100vh;
+}
+
+/* line 312, app/assets/stylesheets/pages.scss */
+.container-fluid.about #current-work a {
+  color: #fff;
+}
+
+/* line 314, app/assets/stylesheets/pages.scss */
+.container-fluid.about #current-work a img {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #fff;
+}
+
+/* line 320, app/assets/stylesheets/pages.scss */
+.container-fluid.about #current-work h2 {
+  color: #93A5A8;
+}
+
+/* line 323, app/assets/stylesheets/pages.scss */
+.container-fluid.about #current-work h3 {
+  color: #93A5A8;
+}
+
+/* line 326, app/assets/stylesheets/pages.scss */
+.container-fluid.about #current-work p {
+  max-width: 50%;
+  color: #D5D1CE;
+}
+
+/* line 334, app/assets/stylesheets/pages.scss */
 .container-fluid.projects {
   height: auto;
   overflow: auto;
 }
 
-/* line 264, app/assets/stylesheets/pages.scss */
+/* line 338, app/assets/stylesheets/pages.scss */
 .container-fluid.projects #projects-background {
   background: url("https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-upsidedown-dark.jpeg?raw=true") no-repeat center center fixed;
   background-color: #93A5A8;
@@ -624,7 +722,7 @@
   min-height: 600px;
 }
 
-/* line 271, app/assets/stylesheets/pages.scss */
+/* line 345, app/assets/stylesheets/pages.scss */
 .container-fluid.projects #projects-background #load-content-container {
   font-size: 33px;
   width: 50%;
@@ -636,14 +734,14 @@
   background-color: rgba(53, 50, 53, 0);
 }
 
-/* line 283, app/assets/stylesheets/pages.scss */
+/* line 357, app/assets/stylesheets/pages.scss */
 .container-fluid.projects #scroll-content-container {
   background-color: #353235;
   color: #fff;
   height: 820px;
 }
 
-/* line 290, app/assets/stylesheets/pages.scss */
+/* line 364, app/assets/stylesheets/pages.scss */
 .container-fluid.contact {
   height: auto;
   overflow: auto;
@@ -653,7 +751,7 @@
   height: 100vh;
 }
 
-/* line 299, app/assets/stylesheets/pages.scss */
+/* line 373, app/assets/stylesheets/pages.scss */
 .container-fluid.contact #contact-container {
   border: 10px solid #93A5A8;
   box-shadow: 10px 10px 5px #3E4044;
@@ -661,13 +759,13 @@
   height: 75%;
 }
 
-/* line 305, app/assets/stylesheets/pages.scss */
+/* line 379, app/assets/stylesheets/pages.scss */
 .container-fluid.contact #contact-container h1 {
   font-size: 60px;
 }
 
 @media screen and (max-width: 816px) and (min-width: 600px) {
-  /* line 317, app/assets/stylesheets/pages.scss */
+  /* line 391, app/assets/stylesheets/pages.scss */
   footer {
     top: 0;
   }
@@ -737,4 +835,4 @@ footer {
   padding-left: 33px;
 }
 
-/*# sourceMappingURL=application.css-561cd811871f6edb27a578b6eb5f061cb518e4c71a76b090f48eecd0166706e9.map */
+/*# sourceMappingURL=application.css-ce142bc9df8d475e504ea56a104daf91dda59c05455eedc36d09155727f6a3ad.map */

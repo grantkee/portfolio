@@ -241,6 +241,8 @@
 /* line 228, app/assets/stylesheets/home.scss */
 .container-fluid.about #skills .row {
   align-items: center;
+  margin-top: 33px;
+  margin-bottom: 33px;
 }
 
 /* line 232, app/assets/stylesheets/home.scss */

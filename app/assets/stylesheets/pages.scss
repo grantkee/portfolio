@@ -114,7 +114,8 @@ $black: #000000;
 
   &.about {
     height: auto;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     #welcome {
       background: url('https://images.unsplash.com/photo-1478515463067-d20f52aace26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1568&q=80') no-repeat center center fixed;
@@ -194,18 +195,43 @@ $black: #000000;
         color: $black;
         text-shadow: 1px 1px $dark-blue;
       }
-      h3 {
-        font-size: 33px;
+      a h3 {
+        font-size: 1rem;
         color: $light-blue;
-        text-shadow: 1px 1px $light-gray;
+        text-shadow: none;
       }
       p {
         font-size: 30px;
-        color: #000000;
+        color: $black;
 
         a {
           color: $med-blue;
         }
+      }
+
+      .accordion {
+        background-color: transparent;
+        color: $dark-blue;
+        border: none;
+        // text-align: left;
+        outline: none;
+        transition: 0.5s;
+        width: 100%;
+
+        &.active, &:hover {
+          background-color: $dark-gray;
+          color: $light-blue;
+        }
+      }
+
+      .panel {
+        color: $white;
+        background-color: $text-background;
+        text-align: left;
+        padding: 0px 15px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
       }
     }
 
@@ -225,6 +251,9 @@ $black: #000000;
     }
 
     #skills {
+      a {
+        color: $white;
+      }
       .row {
         align-items: center;
       }
@@ -237,7 +266,7 @@ $black: #000000;
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
         color: $white;
-        font-size: 33px;
+        font-size: 1.5rem;
         // height: 150px;
         // width: 150px;
         .fas, .far, .fab {
@@ -251,7 +280,52 @@ $black: #000000;
       }
 
       .skill-description {
-        font-size: 33px;
+        font-size: 1.25rem;
+      }
+    }
+
+    #projects {
+      background: url('https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-rightside-dark.jpg?raw=true') no-repeat center center fixed;
+      min-height: 100vh;
+      a {
+        color: $white;
+        img {
+          width: 300px;
+          height: 300px;
+          border: 5px solid $white;
+        }
+      }
+      h2 {
+        color: $med-blue;
+      }
+      h3 {
+        color: $light-blue;
+      }
+      p {
+        max-width: 50%;
+        color: $dark-blue;
+      }
+    }
+
+    #current-work {
+      min-height: 100vh;
+      a {
+        color: $white;
+        img {
+          width: 300px;
+          height: 300px;
+          border: 5px solid $white;
+        }
+      }
+      h2 {
+        color: $light-blue;
+      }
+      h3 {
+        color: $light-blue;
+      }
+      p {
+        max-width: 50%;
+        color: $light-gray;
       }
     }
   }

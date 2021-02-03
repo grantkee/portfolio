@@ -17,7 +17,7 @@
       <div class="col-sm-12 col-md-4">
         <a class="btn-default" href="#skills">
           <%= icon('fas', 'dumbbell') %>
-          <h2>skilz</h2>
+          <h2>skillz</h2>
         </a>
       </div>
     </div>
@@ -33,9 +33,13 @@
         <div class="w-100">
           <h1>Grant Kee</h1>
           <h2>Software Engineer<h2>
-          <a href="#resume"><h3>Resume</h3></a>
-          <a href="#experience"><h3>Experience</h3></a>
-          <a href="#services"><h3>Services</h3></a>
+          <a href="#welcome"><h3>back to top</h3></a>
+          <%
+=begin%>
+ <a href="#experience"><h3>Experience</h3></a>
+          <a href="#services"><h3>Services</h3></a> 
+<%
+=end%>
         </div>
       </div>
   
@@ -46,21 +50,32 @@
           <p>I specialize in full stack web development.</p>
           <p>I'm currently developing during the day for <a href="https://www.citizenmath.com">Citizen Math</a>!</p>
         </div>
-        <div>
-        <h1>Where I'm at in my coding journey</h1>
-          <ul>
-            <li>React: My bread and butter. I enjoy challenging myself with advanced React techniques. I often incorporate Redux with my React projects, but I've also spent a lot of time understanding hooks. I'm currently working on a personal finance app that uses React and Material-UI within a Rails app.</li>
-            <li>Ruby on Rails: My main focus at work. I'm also working on a personal finance app using RoR, React, and PostgreSQL. RoR is such a powerful tool, I really want to master the basics so I can build CRUD apps in no time.</li>
-            <li>Java: After the personal finance app is live online, I want to build it out in Java and put it on mobile. I respect Java so much, but I'm stuck on how to incorporate it more into my current projects. After my portfolio is polished a little more and I finish the web version of my current personal finance app, I will be back to Java.</li>
-            <li>Python: I'm inspired and motivated by Python projects. I currently have a backlog of code that more directly affects my job, but I occassionally have cheat days where I let myself dabble in some Python (like building a basic blockchain to understand the technology better).</li>
-          </ul>
+        <h1>Where I'm at in my coding journey:</h1>
+        <div class="w-100 px-5 mb-5">
+          <button class="accordion" data-panel="react">React</button>
+          <div id="react-panel" class="panel">
+            My bread and butter. I enjoy challenging myself with advanced React techniques. I often incorporate Redux with my React projects, but I've also spent a lot of time understanding hooks. I'm currently working on a personal finance app that uses React and Material-UI within a Rails app.
+          </div>
+          <button class="accordion" data-panel="ror">Ruby on Rails</button>
+          <div id="ror-panel" class="panel">
+            My main focus at work. I'm also working on a personal finance app using RoR, React, and PostgreSQL. RoR is such a powerful tool, I really want to master the basics so I can build CRUD apps in no time.
+          </div>
+          <button class="accordion" data-panel="java">Java</button>
+          <div id="java-panel" class="panel">
+            After the personal finance app is live online, I want to build it out in Java and put it on mobile. I respect Java so much, but I'm stuck on how to incorporate it more into my current projects. After my portfolio is polished a little more and I finish the web version of my current personal finance app, I will be back to Java.
+          </div>
+          <button class="accordion" data-panel="python">Python</button>
+          <div id="python-panel" class="panel">
+            I'm inspired and motivated by Python projects. I currently have a backlog of code that more directly affects my job, but I occassionally have cheat days where I let myself dabble in some Python (like building a basic blockchain to understand the technology better).
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div id="skills" class="w-100 content-break">
+    <h1 class="mt-5 mx-auto col-12">Skillset</h1>
+    <a href="#welcome">back to top</a>
     <div class="row w-100 my-5">
-      <h1 class="my-5 mx-auto col-12">Skillset</h1>
       <div class="col-12 col-lg-3 skill-title">
         <%= icon('fab', 'react', style: 'color: #61DBFB;')%>
         React
@@ -172,9 +187,46 @@
     </div>
     
   </div>
-  <div id="scroll-content-container" class="w-100">
-    <a id="projects"></a>
-    Hiiiii
+  <div id="projects" class="w-100">
+    <div class="w-100">
+      <h1 class="mt-5 mx-auto col-12">Previous Projects</h1>
+      <a href="#welcome">back to top</a>
+    </div>
+    <a href="https://innerbeatle.com" class="my-3">
+      <%= image_tag("https://github.com/grantkee/portfolio/blob/main/app/assets/images/the_beatles.jpg?raw=true", alt: "find your innerbeatle project", id: "innerbeatle", class: "my-5") %>
+      <h1>innerbeatle.com</h1>
+    </a>
+    <h2>Which Beatle are you most like?</h2>
+    <p class="mx-auto">React, Redux, Node, Express, REST API, JWT, bcrypt, authorization, authentication</p>
   </div>
-  <div class="w-100 content-break"><a id="interests"></a></div>
+  <div id="current-work" class="w-100 content-break">
+    <div class="w-100">
+      <h1 class="mt-5 mx-auto col-12">Current Project</h1>
+      <a href="#welcome">back to top</a>
+    </div>
+    <a href="https://www.citizenmath.com" class="my-3">
+      <%= image_tag("https://github.com/grantkee/portfolio/blob/main/app/assets/images/citizenmath.png?raw=true", alt: "citizen math", id: "citizen-math", class: "my-5") %>
+      <h1>www.citizenmath.com</h1>
+    </a>
+    <h2>Math class, reimagined</h2>
+    <p class="mx-auto">Ruby on Rails, ES6, SCSS, HTML5, Nightwatch, JQuery</p>
+    <a href="https://www.commarts.com/webpicks/citizen-math">Featured in Communication Arts Magazine</a>
+  </div>
 </div>
+
+<%= javascript_tag do %>
+  const accordion = document.getElementsByClassName('accordion');
+
+  for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      const lang = this.dataset.panel;
+      const panel = document.getElementById(`${lang}-panel`);
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  }
+<% end %>

@@ -5,6 +5,7 @@ $light-gray: #D5D1CE;
 // $dark-gray: #1C1919;
 $dark-gray: #353235;
 $text-background: rgba(53, 50, 53, 0.59);
+// $text-background: linear-gradient(90deg, transparent 0%, rgba(53, 50, 53, 0.59) 15%, rgba(53, 50, 53, 0.59) 85%, transparent 100%);
 $white: #fff;
 $black: #000000;
 
@@ -173,7 +174,6 @@ $black: #000000;
       background-color: $light-blue;
       background-size: cover;
       min-height: 100vh;
-      // min-height: 600px;
       
       #profile-picture {
         background: url("https://avatars0.githubusercontent.com/u/49913008?s=460&v=4") no-repeat 64% 22%;
@@ -219,19 +219,34 @@ $black: #000000;
         width: 100%;
 
         &.active, &:hover {
-          background-color: $dark-gray;
+          // background-color: $dark-gray;
+          background: linear-gradient(80deg, transparent 0%, $dark-gray 15%, $dark-gray 85%, transparent 100%);
           color: $light-blue;
         }
       }
 
       .panel {
         color: $white;
-        background-color: $text-background;
+        // background-color: $text-background;
+        background: linear-gradient(80deg, transparent 0%, rgba(53, 50, 53, 0.59) 15%, rgba(53, 50, 53, 0.59) 85%, transparent 100%);;
         text-align: left;
         padding: 0px 15px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s ease-out;
+      }
+
+      .fas, .far, .fab {
+        color: $black;
+        font-size: 60px;
+
+        &.fa-linkedin {
+          color: #0966C2;
+        }
+
+        &:hover {
+          color: $white;
+        }
       }
     }
 
@@ -268,8 +283,7 @@ $black: #000000;
         margin-bottom: 2.5rem;
         color: $white;
         font-size: 1.5rem;
-        // height: 150px;
-        // width: 150px;
+
         .fas, .far, .fab {
           font-size: 60px;
         }

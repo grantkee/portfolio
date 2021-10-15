@@ -1,3 +1,3 @@
 # README
 
-New portfolio coming soon February - 2021
+Hi, I'm Grant Kee. This is a repo used to get something quick and easy onto grantkee.com.

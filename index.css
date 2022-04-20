@@ -838,7 +838,7 @@ header a.social-media {
 
 /* line 54, app/assets/stylesheets/application.scss */
 header a.social-media:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* line 60, app/assets/stylesheets/application.scss */

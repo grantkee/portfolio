@@ -598,7 +598,7 @@
 
 /* line 247, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about .fas:hover, .container-fluid.about #about .far:hover, .container-fluid.about #about .fab:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* line 253, app/assets/stylesheets/pages.scss */

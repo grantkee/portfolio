@@ -193,21 +193,21 @@
 /* line 188, app/assets/stylesheets/home.scss */
 .container-fluid.about #about h1 {
   font-size: 60px;
-  text-shadow: 1px 1px #3E4044;
+  /* text-shadow: 1px 1px #3E4044; */
 }
 
 /* line 192, app/assets/stylesheets/home.scss */
 .container-fluid.about #about h2 {
   font-size: 40px;
   color: #000000;
-  text-shadow: 1px 1px #3E4044;
+  /* text-shadow: 1px 1px #3E4044; */
 }
 
 /* line 197, app/assets/stylesheets/home.scss */
 .container-fluid.about #about h3 {
   font-size: 33px;
   color: #93A5A8;
-  text-shadow: 1px 1px #D5D1CE;
+  /* text-shadow: 1px 1px #D5D1CE; */
 }
 
 /* line 202, app/assets/stylesheets/home.scss */
@@ -530,21 +530,21 @@
 /* line 189, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about h1 {
   font-size: 60px;
-  text-shadow: 1px 1px #3E4044;
+  /* text-shadow: 1px 1px #3E4044; */
 }
 
 /* line 193, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about h2 {
   font-size: 40px;
   color: #000000;
-  text-shadow: 1px 1px #3E4044;
+  /* text-shadow: 1px 1px #3E4044; */
 }
 
 /* line 198, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about a h3 {
   font-size: 1rem;
   color: #93A5A8;
-  text-shadow: none;
+  /* text-shadow: none; */
 }
 
 /* line 203, app/assets/stylesheets/pages.scss */
@@ -598,7 +598,7 @@
 
 /* line 247, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about .fas:hover, .container-fluid.about #about .far:hover, .container-fluid.about #about .fab:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* line 253, app/assets/stylesheets/pages.scss */
@@ -838,7 +838,7 @@ header a.social-media {
 
 /* line 54, app/assets/stylesheets/application.scss */
 header a.social-media:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* line 60, app/assets/stylesheets/application.scss */

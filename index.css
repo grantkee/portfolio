@@ -812,7 +812,7 @@ header {
   background: url("https://github.com/grantkee/portfolio/blob/main/app/assets/images/matt-sclarandis-S_IV6KqGeso-unsplash-darkest.jpg?raw=true") no-repeat;
   background-size: cover;
   height: 50px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "monospace", sans-serif;
   color: #fff;
 }
 

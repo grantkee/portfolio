@@ -338,7 +338,7 @@
 .container-fluid {
   margin: 0 auto;
   padding: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "monospace", sans-serif;
   color: #fff;
   background-color: #93A5A8;
   text-align: center;

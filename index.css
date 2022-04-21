@@ -598,7 +598,7 @@
 
 /* line 247, app/assets/stylesheets/pages.scss */
 .container-fluid.about #about .fas:hover, .container-fluid.about #about .far:hover, .container-fluid.about #about .fab:hover {
-  color: #fff !important;
+  color: #fff;
 }
 
 /* line 253, app/assets/stylesheets/pages.scss */
@@ -838,7 +838,7 @@ header a.social-media {
 
 /* line 54, app/assets/stylesheets/application.scss */
 header a.social-media:hover {
-  color: #fff !important;
+  color: #fff;
 }
 
 /* line 60, app/assets/stylesheets/application.scss */
